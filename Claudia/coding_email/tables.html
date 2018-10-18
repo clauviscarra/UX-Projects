@@ -1,0 +1,85 @@
+<!--
+If there’s only one thing you to know about coding email, it’s that tables rule the day. Forget that old “separation of structure, presentation, and behavior” nonsense you learned in standards-based web design. Unlike modern web design the <table> element isn’t used just for tabular data, it’s all there is for consistent structure. External CSS doesn’t drive the styling, either; emails depend on inlined CSS.
+
+Tables Within Tables
+
+For finer control of your HTML, try nesting <table> elements when building emails. At its simplest, an email should be at least two tables deep: -->
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title></title>
+        <style></style>
+    </head>
+
+    <style media="screen">
+      table, td, tr{
+        border: 1px solid black;
+        border-collapse: collapse;
+      }
+      table{
+        margin: auto 0;
+        width: 60%;
+
+      }
+    </style>
+    <body>
+        <table>
+    <tr>
+        <td> 1 </td>
+        <td> 2 </td>
+      </tr>
+    <tr>
+        <td> 3 </td>
+        <td>
+            <table>
+                <tr>
+                    <td>
+                        <table>
+                            <tr>
+                                <td> 4 </td>
+                                <td> 5 </td>
+                                </TR>
+                            <tr>
+                                <td> 7 </td>
+                                <td> 8 </td>
+                              </tr>
+                            </table>
+                        </td>
+                    <td> 6 </td>
+                  </tr>
+                <tr>
+                    <td> 9 </td>
+                    <td> 10 </td>
+                  </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+
+
+
+<TABLE>
+    <TR>
+        <TD> 1 </TD>
+        <TD COLSPAN=3> 2 </TD>
+        </TR>
+    <TR>
+        <TD ROWSPAN=3> 3 </TD>
+        <TD> 4 </TD>
+        <TD> 5 </TD>
+        <TD ROWSPAN=2> 6 </TD>
+        </TR>
+    <TR>
+        <TD> 7 </TD>
+        <TD> 8 </TD>
+        </TR>
+    <TR>
+        <TD COLSPAN=2> 9 </TD>
+        <TD> 10 </TD>
+        </TR>
+    </TABLE>
+
+
+</html>

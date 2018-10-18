@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,900');
+@import url('https://fonts.googleapis.com/css?family=Oswald:400,500');
+
+
+body {
+  top: 0;
+  left: 0;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  font-family: 'Roboto', Arial, sans-serif;
+}
+
+#main-content {
+  background-image: url('http://www.policyconference.org/images/PC2018BG.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width: 100%;
+}
+
+#hub-container {
+  padding: 0 auto;
+  margin: 0 auto;
+}
+
+#promo {
+  background-color: #405560 !important;
+  font-family: 'Oswald', Arial, Sans-Serif;
+  text-transform: uppercase;
+  font-size: 2.4em;
+  font-weight: 500;
+  text-align:center;
+  top: 0;
+  height: 115px;
+  color: #fff;
+  padding-top: 27px;
+  border-bottom: 2px solid white;
+  box-shadow: 0 24px 28px 0 rgba(0,0,0,0.2), 0 24px 28px 0 rgba(0, 0, 0, 0.19);
+}
+
+.button {
+    background-color: #da5341; /* RED */
+    font-family: 'Oswald', Arial, Sans-Serif;
+    color: white;
+    padding: 10px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 22px;
+    margin: 10px 50px;
+    cursor: pointer;
+    -webkit-transition: background-color 0.5s ease-out;
+    -moz-transition: background-color 0.5s ease-out;
+    -o-transition: background-color 0.5s ease-out;
+    transition: background-color 0.5s ease-out;
+}
+
+.button:hover{
+  background-color: #2795b6;
+}
+.button a { color: #fff; text-decoration:none;}
+
+#banner {
+  background-color: #405560 !important;
+  background: -webkit-linear-gradient(left, #da5341, #2795b6) !important; /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(right, #da5341, #2795b6) !important; /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(right, #da5341, #2795b6) !important; /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to right, #da5341, #2795b6) !important; /* Standard syntax (must be last) */
+  background-position: 0px 120px;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#banner-brand #banner-title { margin-top: 1% !important; }
+#banner-brand #banner-title a { color: #fff; }
+#banner-social { margin-top: 0.5%;padding-top: 20px; }
+#banner-search-form { margin-top: 0.5%; }
+
+#banner-social a { font-size: 30px;padding-right: 20px; color:#fff; }
+
+#video-details .video-name { color: #448bd2;text-shadow: none; }
+#video-details p.video-description { color: #808393;font-style: none; }
+#video-details .video-options .btn { color: #313131; background-color: #fff;border: 1px solid #adadad;box-shadow: none;border-radius: 10px; }
+#video-details .video-options .btn:hover { background-color: #e6e6e6; }
+.show-section-header { color: #448bd2;text-shadow: none; }
+#category-grids .player h4.title { color: #313131;text-shadow: none; }
+#category-grids a.player:hover h4 { color: #448bd2; }
+
+#headline
+{
+ font-size:2em;
+  color:#000;
+ border:0px;
+  background-color: #efefef !important;
+  background-position: 0% 0%;
+}
+
+#aipac-footer {
+  background-color: #405560;
+  border-top: 2px solid white;
+  width: 100%;
+  color: #fff;
+  padding: 25px 115px;
+  font-family: 'Roboto', Arial, Sans-Serif;
+}
+
+@media (max-width: 1200px) {
+#promo { font-size: 2.1em; }
+#banner-brand { width: 57%; }
+#banner-social { width: 16%; }
+}
+
+@media (max-width: 990px) {
+#promo { font-size: 1.7em;height: 90px; }
+.button { margin: 0 1%;padding: 10px 25px; }
+#banner-brand { width: 50%; }
+#banner-brand #banner-logo { margin-right: 10px;height: 85px; }
+#banner-brand #banner-title { font-size: 1.5em; margin-top: 8%;}
+#banner-social { margin-top: 0; }
+#headline { font-size: 1.6em; }
+#aipac-footer { padding: 25px 40px; }
+#banner-search-form { margin-top: 0;width: 32%; }
+}
+
+@media (max-width: 768px) {
+#promo { font-size: 1.3em; height: 70px; }
+.button { padding: 5px 10px; font-size:15px; }
+#banner-brand { width: 35%; }
+#banner-social { width: 19%;margin-top: -0.5%;margin-left: 5%; }
+#banner-brand #banner-logo { margin-right: 2%;height: 75px; }
+#banner-brand #banner-title { margin-top: 10%;font-size: 1.25em; }
+#banner-search-form { margin-top: 0;margin-bottom: 3%;padding-top: 20px;width: 40%; }
+#headline { font-size: 1.4em; }
+}
+
+@media (max-width: 640px) {
+#promo { height: 105px; }
+.button { margin: 2% 1%; }
+#banner-brand { width: 100%;margin: 0 auto;text-align: center; }
+#banner-social { width: 26%;margin-top: -0.5%;margin-left: 10%;padding-top: 10px; }
+#banner-brand #banner-logo { margin-right: 2%;height: 75px; }
+#banner-brand #banner-title { margin-top: 6.2%;font-size: 1.9em; }
+#banner-search-form { margin-top: 0;margin-bottom: 3%;padding-top: 0;width: 50%;}
+#headline { font-size: 1.6em; }
+}
+
+@media (max-width: 480px) {
+#promo { height: 105px;font-size: 0.9em; }
+.button { margin: 4% 1%; }
+#banner-brand { width: 100%;margin: 0 auto;text-align: center; }
+#banner-social { width: 100%;margin-top: 2%;margin-left: 29%;margin-bottom: 4%;padding-top: 10px; }
+#banner-brand #banner-logo { margin-right: 2%;height: 75px; }
+#banner-brand #banner-title { margin-top: 6.2%;font-size: 1.9em; }
+#banner-search-form { width: 100%;}
+#headline { font-size: 1.2em; }
+#aipac-footer { font-size: 0.75em;text-align: center;padding: 15px 15px; }
+}

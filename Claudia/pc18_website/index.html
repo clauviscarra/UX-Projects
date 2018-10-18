@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>PC 18</title>
+  <link rel="stylesheet" href="static/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
+  <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+
+
+  <script type="text/javascript" src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js'></script>
+
+  <script type="text/javascript">
+    $(document).ready(function() {
+
+
+      var navbar = $('header');
+      $(window).scroll(function() {
+        navbar.addClass('scroll-effect');
+        if ($(this).scrollTop() === 0) {
+          navbar.removeClass('scroll-effect');
+        }
+      });
+
+
+    });
+  </script>
+
+</head>
+
+
+<body>
+  <!-- HEADER SECTION -->
+  <header>
+    <div class="header">
+      <div class="logo">
+        <img src="static/images/logo.png" alt="choose to lead logo">
+
+      </div>
+      <div class="navbar">
+        <div class="nav">
+          <ul>
+            <li><a href="#">What is PC</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Press</a></li>
+            <li><a href="#">Resources</a></li>
+            <li><a href="#">Speakers</a></li>
+            <li><a href="#">Shabbaton 2018</a></li>
+            <li><a href="#">Video</a></li>
+            <li><a href="#" style="border-right: .5px #405560 solid">Register for PC2018</a></li>
+          </ul>
+
+        </div>
+
+      </div>
+
+
+    </div>
+  </header>
+
+  <div class="spacer">
+    &nbsp;
+  </div>
+
+  <div class="content_wrapper">
+
+    <!-- CAROUSEL SECTION -->
+    <div class="container-carousel">
+      <div class="carousel-slide">
+        <!-- carousel slide -->
+
+      </div>
+      <div class="carousel-text">
+        <!-- carousel text -->
+        <h1 style="margin:30px 30px">Highlights from 2017</h1>
+
+        <p style="margin:0 30px">This video showcases some of the highlights of AIPAC Policy Conference 2017, Many Voices, One Mission. Register for AIPAC Policy Conference 2018 today, and don’t miss a moment!</p>
+        <br>
+        <br>
+
+        <a href="#"><img src="static/images/watch_now.png" alt="" style="width:100%"></a>
+
+
+      </div>
+
+    </div>
+
+
+    <!-- AD SECTION -->
+    <div class="container-ad">
+      <img src="static/images/ad.png" alt="">
+
+    </div>
+
+    <!-- VIDEO SECTION -->
+    <div class="container-video" data-aos="fade-up">
+      <img src="static/images/video.png" alt="">
+      <a href="#">VIEW ALL VIDEOS</a>
+
+    </div>
+    <!-- LEARN ABOUT AIPAC SECTION -->
+    <div class="container-learn" data-aos="fade-up">
+      <img src="static/images/learn_about_aipac.png" alt="">
+
+    </div>
+
+  </div>
+
+  <!--FOOTER SECTION-->
+  <div class="footer">
+    <div class="aipac-logo">
+      <img src="static/images/aipac_logo.png" alt="">
+
+    </div>
+
+
+    <div class="icons" data-aos="zoom-in">
+      <a href="#" class="social-icon" ><i class="fa fa-facebook"></i></a>
+      <a href="#" class="social-icon"><i class="fa fa-twitter"></i></a>
+      <a href="#" class="social-icon"><i class="fa fa-youtube"></i></a>
+      <a href="#" class="social-icon"><i class="fa fa-instagram"></i></a>
+    </div>
+
+
+  </div>
+
+</body>
+
+
+
+</html>
+
+<script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+<script>
+AOS.init({
+duration: 800,
+})
+</script>

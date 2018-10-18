@@ -1,0 +1,133 @@
+*{
+  font-family: sans-serif;
+
+}
+
+body{
+    margin: 0 auto;
+}
+
+.wrapper{
+  width: 100%;
+  background-image: url("./images/Blue-Stripe.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.carousel{
+  margin: 0 auto;
+  max-width: 1200px;
+  display: grid;
+  grid-auto-columns: 1fr 3fr 1fr;
+  /*background-color: blue;*/
+  padding: 20px;
+  grid-gap: 1em;
+  max-height: 450px !important;
+
+
+}
+
+/*.box{*/
+  /*background-color: #444;*/
+  /*color: #fff;
+  padding: 20px;
+}*/
+
+
+.a{
+  grid-column: 1 / 2;
+  display: grid;
+  grid-template-rows: repeat(3, [row] auto);
+  text-align: center;
+  align-items: center;
+}
+
+.carousel__control{
+  height: 50px;
+  width: 50px;
+  opacity: 0.65;
+  cursor: pointer;
+  outline: 0;
+  z-index: 3;
+  background-image: url("./images/Arrow-8.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+
+}
+
+.carousel__control:hover {
+  opacity: 1;
+}
+
+
+
+.speaker{
+  grid-column: 2 / 3;
+  display: grid;
+  grid-gap: .5em;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  color: white;
+  background-color: red;
+}
+
+.speaker .portrait{
+  grid-column: 1 / 2;
+  grid-row: 1;
+  background-color: green;
+}
+
+.speaker .portrait img{
+  margin-top: 20px;
+  width: 100%;
+
+}
+
+
+.speaker .content{
+  grid-column: 2 / 3;
+  grid-row: 1;
+  background-color: green;
+}
+
+.speaker .content h1, p{
+  font-size: 150%;
+
+}
+
+.speaker .content p{
+  font-size: 100%;
+}
+
+
+
+
+.c{
+  grid-column: 3 / 4;
+  display: grid;
+  grid-template-rows: repeat(3, [row] auto);
+  text-align: center;
+  align-items: center;
+}
+
+.c img{
+  height: 40px;
+  width: 40px;
+  right: 10px;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.circles{
+  grid-column: 1 / 4;
+  grid-row: 2;
+  display: block;
+  background-color: green;
+  text-align: center;
+}
+
+.circles .carousel__activator{
+
+}

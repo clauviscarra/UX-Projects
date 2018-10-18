@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>AIPAC EVENT</title>
+    <style>
+    @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,800");
+    * {
+      font-family: "Open Sans", sans-serif;
+      /* border: 2px solid green; */
+      }
+      * a {
+        text-decoration: none; }
+    body{
+      margin: 0 auto;
+      background-color: #dfddde;
+
+    }
+
+    .mobile-navbar{
+      visibility:hidden;
+      display: block;
+      margin: 0 auto;
+      width: 100%;
+      max-width: 100%;
+      box-shadow: none;
+      background-color: #0F1A53;
+      position: fixed;
+      height: 60px!important;
+      overflow: hidden;
+      z-index: 10;
+
+
+    }
+
+
+
+
+    #sidebarMenu{
+      height: 100%;
+      position: fixed;
+      right:0;
+      width:250px;
+      margin-top: 60px;
+      -webkit-transform: translateX(250px);
+      -moz-transform: translateX(250px);
+      -ms-transform: translateX(250px);
+      -o-transform: translateX(250px);
+      transform: translateX(250px);
+      -webkit-transition: transform 250ms ease-in-out;
+      -o-transition: transform 250ms ease-in-out;
+      transition: transform 250ms ease-in-out;
+      background-color: #D50000;
+       }
+
+
+
+    .sidebarMenuInner{
+      margin: 0;
+      padding: 0;
+      border-top: 1px solid rgba(225, 255, 255, 0.10);
+      text-align:left;
+      font-size: 16pt;
+    }
+
+    .sidebarMenuInner li{
+      list-style:none;
+      color:#fff;
+      padding:20px;
+      cursor:pointer;
+      border-bottom: 1px solid rgba(225, 255, 255, 0.10);
+      -webkit-transition: background-color .5s ease-in-out;
+    -moz-transition: background-color .5s ease-in-out;
+    -o-transition: background-color .5s ease-in-out;
+    transition: background-color .5s ease-in-out;
+
+
+    }
+    .sidebarMenuInner li a{
+      color: white;
+      padding:20px;
+      cursor:pointer;
+      text-decoration:none;
+    }
+
+    .sidebarMenuInner li:hover{
+      background-color: #FF2B2B;
+    }
+input[type="checkbox"]:checked ~ #sidebarMenu{
+  -webkit-transform: translateX(0px);
+  -moz-transform: translateX(0px);
+  -ms-transform: translateX(0px);
+  -o-transform: translateX(0px);
+  transform: translateX(0px);
+  box-shadow: 0 5px 45px rgba(0, 0, 0, 0.9);
+
+}
+
+input[type=checkbox] {
+  transition: all 0.3s;
+  box-sizing: border-box;
+  display: none;
+}
+.sidebarIconToggle {
+  transition: all 0.3s;
+  box-sizing: border-box;
+  cursor: pointer;
+  position: absolute;
+  z-index: 99;
+  height: 100%;
+  width: 100%;
+  top: 22px;
+  right: 15px;
+  height: 22px;
+  width: 22px;
+}
+
+.spinner {
+  transition: all 0.3s;
+  box-sizing: border-box;
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  background-color: #fff;
+  visibility:hidden;
+}
+
+.horizontal {
+  transition: all 0.3s;
+  box-sizing: border-box;
+  position: relative;
+  float: left;
+  margin-top: 3px;
+}
+
+.diagonal.part-1 {
+  position: relative;
+  transition: all 0.3s;
+  box-sizing: border-box;
+  float: left;
+}
+
+.diagonal.part-2 {
+  transition: all 0.3s;
+  box-sizing: border-box;
+  position: relative;
+  float: left;
+  margin-top: 3px;
+}
+
+input[type=checkbox]:checked ~ .sidebarIconToggle > .horizontal {
+  transition: all 0.3s;
+  box-sizing: border-box;
+  opacity: 0;
+}
+
+input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-1 {
+  transition: all 0.3s;
+  box-sizing: border-box;
+  transform: rotate(135deg);
+  margin-top: 8px;
+}
+
+input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
+  transition: all 0.3s;
+  box-sizing: border-box;
+  transform: rotate(-135deg);
+  margin-top: -9px;
+}
+  @media screen and (max-width:600px){
+  .mobile-navbar{
+    visibility: visible;
+  }
+  .spinner{
+    visibility: visible;
+  }
+
+  }
+
+
+
+    </style>
+  </head>
+  <body>
+
+  <div class="mobile-navbar"></div>
+
+  <input type="checkbox" name="" id="openSidebarMenu" class="openSidebarMenu">
+  <label for="openSidebarMenu" class="sidebarIconToggle">
+    
+  <div class="spinner diagonal part-1"></div>
+  <div class="spinner horizontal"></div>
+  <div class="spinner diagonal part-2"></div>
+</label>
+<div class="logo"></div>
+<div id="sidebarMenu">
+  <ul class="sidebarMenuInner">
+    <li><a href="">Home</a></li>
+    <li><a href="">Speaker</a></li>
+    <li><a href="">Host Committee</a></li>
+    <li><a href="">About AIPAC</a></li>
+    <li><a href="">RSVP TODAY</a></li>
+  </ul>
+</div>
+
+
+  </body>
+</html>

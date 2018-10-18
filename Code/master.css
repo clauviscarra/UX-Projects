@@ -1,0 +1,250 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,800");
+
+* {
+  font-family: "Open Sans", sans-serif;
+  /* border: 2px solid green; */
+}
+
+* a {
+  text-decoration: none;
+}
+
+body {
+  margin: 0 auto;
+  /* Firefox */
+  -moz-transition: all .5s ease-in;
+  /* WebKit */
+  -webkit-transition: all .5s ease-in;
+  /* Opera */
+  -o-transition: all .5s ease-in;
+  /* Standard */
+  transition: all .5s ease-in;
+  /* box-shadow: 0 1px 45px rgba(0, 0, 0, 0.7) !important; */
+}
+
+.wrapper {
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+.navbar {
+  z-index: 99;
+  margin: 0 auto;
+  width: 100%;
+  color: white;
+  background-color: #0F1A53;
+  position: fixed;
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-template-areas: "logo menu"
+}
+
+.logo {
+  margin: auto 0px;
+  grid-area: logo;
+  padding: 10px;
+  padding-left: 30px;
+}
+
+.menuTabs {
+  margin: auto 0px;
+  grid-area: menu;
+  padding: 10px;
+  text-align: right;
+}
+
+.menuTabs ul li {
+  display: inline;
+  list-style: none;
+}
+
+.menuTabs a {
+  color: #53A7F1;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 14pt;
+  -webkit-transition: color .3s ease-in-out;
+  -moz-transition: color .3s ease-in-out;
+  -o-transition: color .3s ease-in-out;
+  transition: color .3s ease-in-out;
+}
+
+
+.main-container {
+  margin: 0 auto;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  padding-top: 120px;
+  padding-bottom: 150px;
+}
+
+.sub-container {
+  margin: 0 auto;
+  width: 60%;
+
+}
+
+.sub-container-2 {
+  margin: 0 auto;
+  width: 40%;
+
+}
+
+.main-box {
+  margin: 0 auto;
+  width: 100%;
+  background-color: white;
+  /* padding: 30px; */
+  box-shadow: 0 4px 40px 0 rgba(0, 0, 0, 0.4), 0 6px 40px 0 rgba(0, 0, 0, 0.19);
+}
+
+.title-dark {
+  font-size: 30px;
+  color: #0f1A53;
+  font-weight: 600;
+  line-height: 110%;
+}
+
+.subtitle-dark {
+  font-size: 20px;
+  color: #0f1A53;
+  font-weight: 800;
+  line-height: 100%;
+
+}
+.subtitle-light {
+  font-size: 15px;
+  color: white;
+  font-weight: 600;
+  line-height: 70%;
+
+}
+
+.title-light {
+  font-size: 30px;
+  color: white;
+  font-weight: 600;
+  line-height: 60%;
+}
+
+.text-light {
+  font-size: 15px;
+  color: white;
+  line-height: 110%;
+}
+
+.text-dark {
+  font-size: 15px;
+  color: #0f1A53;
+  line-height: 110%;
+}
+
+.item {
+  display: grid;
+  grid-template-columns: 85% 15%;
+  align-items: center;
+  padding: 10px 20px 10px 20px;
+}
+
+.item:nth-child(odd) {
+  background-color: #e5e6ec;
+}
+
+
+
+.action {
+  margin: auto 0;
+  text-align: center;
+  /* border: solid black 1px; */
+}
+
+.redCheckbox {
+  /* margin: 10px; */
+  -webkit-appearance: none;
+  background-color: #FFF;
+  border: none;
+  padding: 10px;
+  border-radius: 3px;
+  -webkit-transition: background-color .3s ease-in-out;
+  -moz-transition: background-color .3s ease-in-out;
+  -o-transition: background-color .3s ease-in-out;
+  transition: background-color .3s ease-in-out;
+}
+
+.redCheckbox:hover{
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.1), 0 6px 40px 0 rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+
+}
+
+
+
+.redCheckbox:active, .redCheckbox:checked:active {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05), inset 0px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.redCheckbox:checked {
+  background-color: #D50000 !important;
+  /* border: 1px solid #adb8c0; */
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  color: #FFF;
+  background-image:url('images/CheckMark.png');
+  /* background-size: contain; */
+  background-position: center;
+  background-repeat: no-repeat;
+
+}
+
+
+
+.center {
+  margin: auto 0;
+  text-align: center;
+}
+
+.button {
+  margin: auto 0;
+  text-align: center;
+  color:white;
+  padding: 15px 35px;
+  background-color: #D50000;
+  font-size: 15px;
+  font-weight: 600;
+  -webkit-transition: background-color .3s ease-in-out;
+  -moz-transition: background-color .3s ease-in-out;
+  -o-transition: background-color .3s ease-in-out;
+  transition: background-color .3s ease-in-out;
+}
+
+.button:hover {
+  background-color: #FF2B2B;
+  cursor: pointer;
+}
+
+.divider {
+  border: 0px;
+  height: 2px;
+  background: #53A7F1;
+}
+
+@media screen and (max-width:800px) {
+
+  .main-container{
+    background-position: 75% 50%;
+  }
+
+  .sub-container{
+    width:80%;
+  }
+  .sub-container-2{
+    width:80%;
+  }
+
+  .title-light{text-align:center;}
+  .subtitle-light{text-align:center;}
+  .subtitle-dark{text-align:center;}
+
+
+}

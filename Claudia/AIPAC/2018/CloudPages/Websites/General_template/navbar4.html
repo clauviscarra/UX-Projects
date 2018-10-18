@@ -1,0 +1,249 @@
+
+<!-- This one has the navbar below the logo, it's sticky. -->
+
+    <meta charset="utf-8">
+    <title>Navbar</title>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
+
+    <style>
+
+    @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,800");
+    * {
+      font-family: "Open Sans", sans-serif;
+      /* border: 2px solid green; */
+      }
+      * a {
+        text-decoration: none; }
+    body{
+      margin: 0 auto;
+
+      /* Firefox */
+      -moz-transition: all .5s ease-in;
+      /* WebKit */
+      -webkit-transition: all .5s ease-in;
+      /* Opera */
+      -o-transition: all .5s ease-in;
+      /* Standard */
+      transition: all .5s ease-in;
+    }
+
+    .wrapper {
+      margin: 0 auto;
+      max-width: 1280px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.7); }
+    .navbar{
+      z-index:99;
+      margin: 0 auto;
+      margin-top:-10px;
+      width: 1280px;
+      color: white;
+      background-color: #0F1A53;
+      position: fixed;
+      display: grid;
+      grid-template-columns: repeat(2, auto);
+      grid-template-areas: "logo menu" "mobile-nav mobile-nav"
+
+
+    }
+
+    .logo{
+      margin: auto 0px;
+      grid-area:logo;
+      padding: 10px;
+      padding-left:30px;
+
+    }
+
+    .menuTabs{
+      margin: auto 0px;
+      grid-area:menu;
+      padding: 10px;
+      text-align: right;
+    }
+    .menuTabs ul li{
+      display: inline;
+      list-style: none;
+    }
+    .menuTabs a{
+      color:white !important;
+      text-decoration: none;
+      font-weight: 400;
+      font-size: 14pt;
+      transition: opacity 0.2s;
+      -webkit-tranistion: opacity 0.2s;
+      opacity: .7;
+      transition: text-shadow 0.2s ease-in-out;
+      transition: all 0.3s ease-in-out; }
+
+    }
+
+    .menuTabs a:hover{
+      text-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+      opacity: 1  !important;
+      cursor: pointer !important;
+      font-size: 14.05pt !important;
+      color: #53A7F1 !important;
+
+    }
+
+    .mobile-nav{
+      display: none;
+      width:100%;
+      margin-top: -25px;
+      position: fixed;
+      padding-top:15px;
+      padding-bottom:15px;
+      z-index: 100;
+
+    }
+
+    .mobile-nav .top{
+      background-color: #53A7F1;
+      padding-top:25px;
+      padding-bottom:25px;
+
+
+    }
+
+    .mobile-nav .top a{
+      float: right;
+      border: 2px white solid;
+      margin-right:10px;
+      padding:10px;
+      color: white;
+
+    }
+
+    .mobile-nav .top img{
+      padding-left: 10px;
+    }
+
+    .mobile-nav .bottom{
+      background-color: #0F1A53;
+      text-align: center;
+      padding-top:10px;
+      padding-bottom:10px;
+    }
+    .mobile-nav .bottom a{
+      color:white;
+      font-size:10pt;
+      padding:10px;
+      /* Firefox */
+      -moz-transition: all .5s ease-in;
+      /* WebKit */
+      -webkit-transition: all .5s ease-in;
+      /* Opera */
+      -o-transition: all .5s ease-in;
+      /* Standard */
+      transition: all .5s ease-in;
+    }
+
+    .mobile-nav .bottom a:hover{
+      color:#53A7F1;
+
+    }
+
+  .title{
+    font-size:50px;
+    color: #0f1A53;
+    font-weight: 600;
+  }
+
+
+
+
+    @media screen and (max-width:600px){
+    .navbar{
+      display: none;
+    }
+
+    .mobile-nav{
+      display: block;
+    }
+
+    .mobile-navbar{
+      visibility: visible;
+    }
+    #link1{
+    /* padding:50px !important; */
+      text-align:center;
+      line-height:200%;
+    }
+    #eventInfo{
+    margin: 0px auto;
+    width:100% !important;
+    padding:10px !important;
+    }
+    #eventTitle{
+    font-size:50px !important;
+      line-height:100%;
+    }
+      .title{
+      text-align: center;
+        font-size: 40px;;
+        line-height:130%;
+      }
+
+
+
+      .aboutAipacContent{
+        width:100% !important;
+      }
+
+
+      .rsvp-container{
+       background-position: 0px -500px !important;
+
+
+      }
+
+
+
+
+  }
+
+
+    </style>
+
+
+    <div class="wrapper">
+
+    <div class="navbar">
+      <div class="logo">
+        <img src="https://image.act.aipac.org/lib/fe8313727d6d027b73/m/1/0f00d2de-f3b1-4f04-807d-667237de069a.png" alt="">
+
+      </div>
+      <div class="menuTabs">
+        <ul>
+          <li><a id="link1" style="padding-right:40px;" href="#">Home</a></li>
+          <li><a id="link2" style="padding-right:40px;" href="#speakers">Speakers</a></li>
+          <li><a id="link3" style="padding-right:40px;" href="#hostCommittee">Host Committee</a></li>
+          <li><a id="link4" style="padding-right:40px;" href="#about">About AIPAC</a></li>
+          <li><a href="#" style="padding-right:30px;">RSVP TODAY</a></li>
+        </ul>
+
+      </div>
+
+    </div>
+
+
+  </div>
+  <div class="mobile-nav">
+    <div class="top">
+      <img src="https://image.act.aipac.org/lib/fe8313727d6d027b73/m/1/0f00d2de-f3b1-4f04-807d-667237de069a.png" alt="">
+
+      <a href="#">RSVP TODAY!</a>
+
+    </div>
+
+
+    <div class="bottom">
+      <a id="link1" href="#">Home</a>
+      <a id="link2" href="#speakers">Speakers</a>
+      <a id="link3" href="#hostCommittee">Host Committee</a>
+      <a id="link4" href="#about">About AIPAC</a>
+
+    </div>
+
+  </div>
